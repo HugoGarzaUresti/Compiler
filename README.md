@@ -21,8 +21,19 @@ Install PLY using pip:
 Running the Compiler
 To run the compiler, run:
 Python:
-`python parser.py programfile.txt
-python vm.py out.txt`
+`python parser.py programFile.txt
+python vm.py programName.txt`
+
+The programName is defined at the start of the code in the program file, like this:
+Code
+`program programName;`
+
+There are several example files in the repository such as test_fib.txt in which case running the program would look like this:
+Code
+`parser.py test_fib.txt`
+`vm.py hola.txt`
+
+All test programs come with program name set to 'hola' but can be changed.
 
 Contributing
 Contributions to this project are welcome. Please follow standard git practices for submitting pull requests or issues.
