@@ -1,0 +1,69 @@
+program hola;
+var int glo;
+
+fun int fib(int param1){
+	param1 = param1 + 2;
+	return param1+1;
+}
+
+fun float f(float si, int yes){
+	outco(si, yes, 3 * si / (4 + 3) * 1 + yes > 3 || (yes < -5));
+	if(3 * si / (4 + 3) * 1 + yes > 3 && (yes < -5)){
+		outco("en el i", 3);
+		return 3;
+	} else {
+		outco("elseee", si + yes);
+		return si + yes;
+	}
+}
+
+fun void vaciooo(){
+	return;
+}
+// Esto es un comentario osi
+class clase {
+	private:
+		var int osi;
+		fun int yay(int par1){
+			return 3;
+		}
+	public:
+		var float esobrad;
+		fun char charfunc(int p1){
+			p1 = 3 * 8 + 5;
+			osi = 4;
+			return "r";
+		}
+		fun int esoo(int par1){
+			osi = 1054;
+			return osi + yay(5);
+		}
+};
+
+main(){
+	var int num, arr[2][4];
+	var float fi;
+	var clase hola;
+	var char eit;
+	arr[1][2] = hola.esoo(3);
+	eit = hola.charfunc(3);
+	outco(eit, "osiiiiiii",arr[1][2]);
+	num = 0;
+	num = fib(num) - 1;
+	fi = f(3.25, num);
+	outco(3.4, fib);
+	if(num > 0){
+		outco("num" , num);
+		while(num > -3){
+			outco(num-1);
+			num = num - 1;
+		}
+	} else {
+		outco("fue en el else");
+	}
+	while(num > -3){
+		outco(num-1);
+		num = num - 1;
+	}
+	
+}
